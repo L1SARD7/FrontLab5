@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №5 (Клімчук А.В.)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        
+        <section class="task-section">
+            <h2>Завдання 1. Валідація форми (Варіант 1)</h2>
+            <form id="userForm">
+                
+                <div class="form-group">
+                    <label>ПІБ (Приклад: Клімчук А.В.):</label>
+                    <input type="text" id="fullname" placeholder="Прізвище І.Б.">
+                </div>
+
+                <div class="form-group">
+                    <label>Варіант (Приклад: 76):</label>
+                    <input type="text" id="variant" placeholder="ЧЧ">
+                </div>
+
+                <div class="form-group">
+                    <label>Група (Приклад: ІО-31):</label>
+                    <input type="text" id="group" placeholder="ТТ-ЧЧ">
+                </div>
+
+                <div class="form-group">
+                    <label>Телефон (Приклад: (097)-123-45-67):</label>
+                    <input type="text" id="phone" placeholder="(ЧЧЧ)-ЧЧЧ-ЧЧ-ЧЧ">
+                </div>
+
+                <div class="form-group">
+                    <label>ID-card (Приклад: МН №123456):</label>
+                    <input type="text" id="idcard" placeholder="ТТ №ЧЧЧЧЧЧ">
+                </div>
+
+                <button type="submit">Перевірити</button>
+            </form>
+
+            <div id="result" class="result-box"></div>
+        </section>
+
+
+        <section class="task-section">
+            <h2>Завдання 2. Інтерактивна таблиця</h2>
+            <p>Цільова клітинка: <b>№4</b>. Подвійний клік: фарбує рядки через один.</p>
+            
+            <div class="controls">
+                <label>Оберіть колір: <input type="color" id="colorPicker" value="#FFFF00"></label>
+            </div>
+
+            <table id="myTable">
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td id="target-cell">4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
+                </tr>
+                <tr>
+                    <td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td>
+                </tr>
+                <tr>
+                    <td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td>
+                </tr>
+                <tr>
+                    <td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td>
+                </tr>
+                <tr>
+                    <td>31</td><td>32</td><td>33</td><td>34</td><td>35</td><td>36</td>
+                </tr>
+            </table>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
